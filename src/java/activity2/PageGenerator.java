@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author andre_000
  */
-@WebServlet(name = "PageGenerator", urlPatterns = {"/PageGenerator"})
+@WebServlet(name = "PageGenerator", urlPatterns = {"/Pager"})
 public class PageGenerator extends HttpServlet {
 
     /**
@@ -41,6 +41,24 @@ public class PageGenerator extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet PageGenerator at " + request.getContextPath() + "</h1>");
+            out.println("<h2>Superhero table<h2>");
+            out.println("<table border=\"1\" style=\"width:100%\">");
+            out.println("<tr>");
+            out.println("<td>Barry</td>");
+            out.println("<td>Allen</td> ");
+            out.println("<td>Flash</td>");
+            out.println("</tr>");
+            out.println("<tr>");
+            out.println("<td>Bruce</td>");
+            out.println("<td>Wayne</td> ");
+            out.println("<td>Batman</td>");
+            out.println("</tr>");
+            out.println("<tr>");
+            out.println("<td>Clark</td>");
+            out.println("<td>Kent</td> ");
+            out.println("<td>Superman</td>");
+            out.println("</tr>");
+            out.println("</table>");
             out.println("</body>");
             out.println("</html>");
         }
