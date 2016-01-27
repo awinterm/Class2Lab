@@ -13,25 +13,16 @@ import java.time.LocalTime;
  * @author andre_000
  */
 public class WelcomeService {
-    private LocalTime date = LocalTime.now();
-
-    public LocalTime getDate() {
-        return date;
-    }
-
-    public void setDate(LocalTime date) {
-        this.date = date;
-    }
     
     private String timeOfDay(){
-        LocalTime date = LocalTime.now();
+        LocalTime time = LocalTime.now();
         String timeOfDay = "ERROR";
 
-        if(date.isBefore(LocalTime.MIDNIGHT) && date.getHour() > 16){
+        if(time.isBefore(LocalTime.MIDNIGHT) && time.getHour() > 16){
             timeOfDay = "evening";
-        } else if (date.getHour() <= 16 && date.getHour() >= 12){
+        } else if (time.getHour() <= 16 && time.getHour() >= 12){
             timeOfDay = "afternoon";
-        } else if (date.getHour() <= 11) {
+        } else if (time.getHour() <= 11) {
             timeOfDay = "morning";
         }
         
