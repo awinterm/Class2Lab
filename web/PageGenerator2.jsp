@@ -17,6 +17,16 @@
             // since the java version was already written it was easier to just 
             // copy and paste it here. I may be missing the point of this Lab if
             // it was to show you could do it either way I get that.  
+            
+            // The point is to say that its easier to use Java code and HTML as one.
+            // HTML for mark up, Java code to generate code like tables with for loops and whatnot. 
+            
+            
+            
+            // <%= is a short cut for out.println
+            // use like this <p><%= getMsg() %nospaceherebutitmessesupthecommentwithoutit> <p>
+
+            
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
