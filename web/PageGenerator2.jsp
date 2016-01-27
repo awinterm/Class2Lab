@@ -16,7 +16,7 @@
             // it would be easier to do this with just html, however in this case
             // since the java version was already written it was easier to just 
             // copy and paste it here. I may be missing the point of this Lab if
-            // it was to show you could do it either way I get that. 
+            // it was to show you could do it either way I get that.  
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
