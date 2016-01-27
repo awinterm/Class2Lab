@@ -17,7 +17,7 @@ public class WelcomeService {
         LocalTime time = LocalTime.now();
         String timeOfDay = "ERROR";
 
-        if(time.getHour() < 24 && time.getHour() > 16){
+        if(time.getHour() <= 24 && time.getHour() > 16){
             timeOfDay = "evening";
         } else if (time.getHour() <= 16 && time.getHour() >= 12){
             timeOfDay = "afternoon";
